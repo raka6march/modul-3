@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Selector HTML</title>
+    <style>
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 0;
+            color: #333;
+        }
+
+        /* Element Selector */
+        p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.5;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Class Selector */
+        .highlight {
+            background-color: #ffef96;
+        }
+
+        /* ID Selector */
+        #header {
+            font-size: 24px;
+            color: #444;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+
+        /* Attribute Value Selector */
+        a[target="_blank"] {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid #e74c3c;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+
+        a[target="_blank"]:hover {
+            text-decoration: underline;
+        }
+
+        /* Adjacent Sibling Combinator */
+        h2 + p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">Header ini menggunakan Id Selector</div>
+    <p class="highlight">Ini adalah paragraf yang menggunakan class Selector.</p>
+    <p>Ini adalah paragraf yang menggunakan Element Selector.</p>
+    <a href="https://www.example.com" target="_blank">Ini adalah href yang menggunakan Value Selector</a>
+    <h2>Judul yang menggunakan Adjacent Sibling Combinator</h2>
+    <p>Paragraf pertama yang berdekatan dengan h2 (Adjacent Sibling Combinator), akan memiliki font tebal.</p>
+    <p>Paragraf kedua yang tidak berdekatan dengan h2 (Adjacent Sibling Combinator), tidak akan memiliki font tebal.</p>
+</body>
+</html>
